@@ -57,7 +57,7 @@ setup(
 
     # Update ./build-scripts/ubuntu-xxxx/build-3rd-parties.sh when this list gets updated.
     # - Excluding changes to indy-plenum.
-    install_requires=['indy-plenum==1.13.1',
+    install_requires=['indicio-indy-plenum>=1.13.2rc15',
                     # importlib-metadata needs to be pinned to 3.10.1 because from v4.0.0 the package
                     # name ends in python3-importlib-metadata_0.0.0_amd64.deb
                     # see also build-scripts/ubuntu-2004/build-3rd-parties.sh
@@ -77,18 +77,7 @@ setup(
              'scripts/get_metrics',
              'scripts/generate_indy_pool_transactions',
              'scripts/init_indy_keys',
-             'scripts/upgrade_indy_node_ubuntu1604.sh',
-             'scripts/upgrade_indy_node_ubuntu1604_test.sh',
-             'scripts/upgrade_indy_node.bat',
-             'scripts/upgrade_indy_node_test.bat',
-             'scripts/restart_indy_node_ubuntu1604.sh',
-             'scripts/restart_indy_node.bat',
-             'scripts/restart_sovrin_node_ubuntu1604.sh',
-             'scripts/complete_rebranding_upgrade_ubuntu1604.sh',
-             'scripts/install_indy_node.bat',
-             'scripts/delete_indy_node.bat',
-             'scripts/restart_upgrade_agent.bat',
-             'scripts/install_nssm.bat',
+             'scripts/docker-upgrade.sh',
              'scripts/read_ledger',
              'scripts/validator-info',
              'scripts/validator-info-history',
